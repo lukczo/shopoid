@@ -1,0 +1,117 @@
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media  screen and (min-width: 768px) {
+section, header, nav, footer {
+    margin: 0 10vw;
+}
+    #subhero {
+height: 33vh;
+display: flex;
+justify-content: center;
+align-items: center;
+vertical-align: middle;
+    }
+
+    #subhero ul li {
+        display: inline;
+        margin: 5px;
+        }
+    #subhero ul {
+        text-align: center;
+    }
+    #hero {
+        height: 50vh;
+    }
+
+    .tldr {
+        display: inline-block;
+    }
+    #readmorebtn {
+        display: none;
+    }
+    article p {
+        padding: 1rem 15rem;
+    }
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #hero {
+        height: 75vh;
+    }
+    #menu {
+        display: none;
+    }
+    #shopping-cart{
+        right: 8vw;
+    }
+    .menu-options {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        margin: 0;
+        height: 2rem;
+    }
+    nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    }
+
+    #highlited-categories, #recommended-products{
+        min-height: 100vh;
+    }
+    #cta-btns {
+        display: none;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+    footer div {
+        padding: 5px;
+    }
+    footer li {
+        display: list-item;
+        list-style-type: none;
+        padding: 5px;
+        text-align: left;
+    }
+    .cta-expanded {
+        display: inline-block;
+    }
+    .cta-expanded ul :first-child {
+        margin-bottom: 10px;
+        border-bottom: solid 1px rgb(177, 177, 177);
+        font-weight: bold;
+    }
+    .cta-expanded li:hover{
+        color: white;
+        border-bottom: solid 1px white;
+        cursor: pointer;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #hero {
+        height: 90vh;
+    }
+} 
